@@ -1,4 +1,4 @@
-package com.example.splashscreen.domain.model
+package com.example.splashscreen.domain.models
 
 data class OnBoardingItem (
     val description:String,

@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.splashscreen.domain.model.OnBoardingItem
+import com.example.splashscreen.domain.models.OnBoardingItem
 import com.example.splashscreen.R
 
 class OnBoardingItemAdapter(private val onboardigItems: List<OnBoardingItem>) :
@@ -33,6 +33,8 @@ class OnBoardingItemAdapter(private val onboardigItems: List<OnBoardingItem>) :
             )
         )
     }
+
+
 
     override fun onBindViewHolder(holder: OnBoardingItemViewHolder, position: Int) {
         holder.bind(onboardigItems[position])

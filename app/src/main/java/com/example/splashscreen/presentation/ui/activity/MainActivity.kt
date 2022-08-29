@@ -1,21 +1,13 @@
 package com.example.splashscreen.presentation.ui.activity
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
-import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.TextView
-import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.widget.ViewPager2
-import com.example.splashscreen.presentation.ui.fragments.HomeActivity
-import com.example.splashscreen.domain.model.OnBoardingItem
 import com.example.splashscreen.R
 import com.example.splashscreen.presentation.ui.adapter.OnBoardingItemAdapter
-import com.google.android.material.button.MaterialButton
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var onBoardingItemsAdapter: OnBoardingItemAdapter
@@ -26,12 +18,12 @@ class MainActivity : AppCompatActivity() {
         setTheme(R.style.Theme_SplashScreen)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setOnBoardingItems()
+       /* setOnBoardingItems()
         setupIndicator()
-        setCurrentIndicator(0)
+        setCurrentIndicator(0)*/
     }
 
-    private fun setOnBoardingItems(){
+   /* private fun setOnBoardingItems(){
         onBoardingItemsAdapter = OnBoardingItemAdapter(
             listOf(
                 OnBoardingItem(
@@ -123,5 +115,5 @@ class MainActivity : AppCompatActivity() {
                     )
                 )
         }
-    }
+    }*/
 }
